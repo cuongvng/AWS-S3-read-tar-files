@@ -7,7 +7,11 @@ class S3Loader(object):
     AWS_SECRET_ACCESS_KEY = "<Your_aws_secret_access_key>"
     AWS_REGION_NAME = "<Your_aws_region_name>"
     AWS_STORAGE_BUCKET_NAME = "<Your_aws_bucket_name_on_s3>"
-    s3_client = boto3.client("s3")
+
+    def __init__(self):
+        self.s3_client = boto3.client("s3",
+                                     aws_access_key_id=self.AWS_ACCESS_KEY_ID,
+                                     aws_secret_access_key=self.AWS_SECRET_ACCESS_KEY)
 
     def load_tar_file_s3_into_object(self, s3_filepath):
         """
