@@ -14,4 +14,6 @@ it is always cool to automate all things!
 In my case, as a very example, 
 I have a trained `implicit.als.AlternatingLeastSquare` model save in `joblib` format, 
 which was then compressed in `tar.gz` file on S3. I will load that compressed model into a Python instance of the class, 
-without decompressing it! 
+without decompressing it!
+
+Hope it helps! If there are any problems, please feel free to create an `Issue`. 
