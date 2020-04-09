@@ -12,8 +12,8 @@ then read the model file. But for someone lazy (like me :smiley:),
 it is always cool to automate all things!
 
 In my case, as a very example, 
-I have a trained `implicit.als.AlternatingLeastSquare` model save in `joblib` format, 
-which was then compressed in `tar.gz` file on S3. I will load that compressed model into a Python instance of the class, 
-without decompressing it!
+I have a trained `implicit.als.AlternatingLeastSquare` machine learning model saved in `joblib` format, 
+which was then compressed in `tar.gz` file on S3. I will load that compressed file into its original Python object, 
+without decompressing and even without downloading it!
 
 Hope it helps! If there are any problems, please feel free to create an `Issue`. 
