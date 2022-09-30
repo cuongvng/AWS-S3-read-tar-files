@@ -3,7 +3,7 @@ botocore==1.15.36
 certifi==2019.11.28
 docutils==0.15.2
 jmespath==0.9.5
-joblib==0.14.1
+joblib==1.2.0
 python-dateutil==2.8.1
 s3transfer==0.3.3
 six==1.14.0
